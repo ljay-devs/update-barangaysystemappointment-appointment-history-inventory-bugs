@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="icon" type="icon" href="/public/img/logo-img.png">
+  <link rel="stylesheet" href="/public/css/Appointment.css"/>
+  <title>Appointment</title>
+</head>
+
+<body>
+
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="logo">
+          <img class="logo-img" src="/public/img/logo-img.png" alt="">
+        </div>
+        
+        <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/public/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/Appointment.html">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div style="margin-top: 150px;"></div>
+
+
+  <section class="my-5 appointment-section">
+    <div class="container certificate mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Barangay Certificates Appointment</h2>
+          <form>
+            <div class="form-row form-fname-lname">
+              <div class="form-group col-md-5"> 
+                <label for="firstName">First Name</label> 
+                <input type="text"class="form-control" id="firstName" placeholder="First Name"> 
+              </div>
+              <div class="form-group col-md-5"> 
+                <label for="lastName">Last Name</label> 
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name"> 
+              </div>
+            </div>
+            <div class="form-group">
+               <label for="street">Street</label> 
+                <select id="InputStreet" class="form-control">
+                  <option selected></option>
+                        <option>Sitio Tubuhan</option>
+                        <option>Sitio Kultihan</option>
+                        <option>Sitio Pook</option>
+                        <option>Sitio Kampuklo</option>
+                </select>
+             </div>
+            <div class="form-group"> 
+              <label for="date">Date</label> 
+              <input type="date" class="form-control" id="InputDate">
+              <label for="time">Time</label>
+              <input type="time" class="form-control" id="InputTime">
+            </div>
+            <div class="form-group">
+               <label for="certificate">Certificates</label>
+                <select class="form-control" id="InputCertificate">
+                  <option selected></option>
+                  <option>Barangay Certificate</option>
+                  <option>Barangay Clearance</option>
+                  <option>Barangay Residency</option>
+                </select> 
+              </div>
+              <div class="form-group">
+                <label for="purpose">Purpose</label>
+                <select class="form-control" id="InputPurpose">
+                  <option selected></option>
+                  <option>Work</option>
+                  <option>School</option>
+                  <option>UNIFAST</option>
+                </select>
+              </div>
+               <button type="submit" class="btn" style="margin-top: 10px;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container certificate mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Barangay Health Center Appointment</h2>
+          <form>
+            <div class="form-row form-fname-lname">
+              <div class="form-group col-md-5"> 
+                <label for="firstName">First Name</label> 
+                <input type="text" class="form-control" id="firstNameHC" placeholder="First Name"> 
+              </div>
+              <div class="form-group col-md-5"> 
+                <label for="lastName">Last Name</label> 
+                <input type="text" class="form-control" id="lastNameHC" placeholder="Last Name"> 
+              </div>
+            </div>
+            <div class="form-group my-3 col-md-5">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" name="age" id="InputAgeHC">
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label> 
+              <select id="HealthCenterStreet" class="form-control">
+                <option selected></option>
+                <option>Sitio Tubuhan</option>
+                <option>Sitio Kultihan</option>
+                <option>Sitio Pook</option>
+                <option>Sitio Kampuklo</option>
+              </select>
+            </div>
+            <div class="form-group"> 
+              <label for="date">Date</label> 
+              <input type="date" class="form-control" id="InputDateHC">
+              <label for="time">Time</label>
+              <input type="time" class="form-control" id="InputTimeHC">
+            </div>
+            <div class="form-group">
+              <label for="PurposeHealth">Purpose</label>
+              <select class="form-control" id="InputForHealth">
+                <option selected></option>
+                <option>Vaccine</option>
+                <option>Check-up For Pregnant</option>
+                <option>Check-up For Children</option>
+              </select> 
+            </div>
+            <button type="submit" class="btn" style="margin-top: 10px;">Submit</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js " integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r " crossorigin="anonymous "></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js " integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy " crossorigin="anonymous "></script>
+  <script src="/public/js/main.js"></script>
+  <script src="/public/js/Appointment.js"></script>
+</body>
+
+</html>

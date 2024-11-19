@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #4C1F7A;
+}
+.header {
+    background-color: #FF8000;
+     padding: 5px;
+ }
+
+ .logo{
+     border-width: 1px;
+     border-color: white;
+ }
+ 
+ .logo-img {
+     height: 60px;
+     
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+ }
+ 
+ .nav-ul {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+ }
+ 
+ .nav-link  {
+     font-family: "roboto", serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     padding: 5px 10px;
+     transition: background-color 0.3s;
+     text-decoration: none;
+     color: white;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; 
+ }
+ 
+ .navbar-nav a:hover {
+     background-color: #575757;
+     color: white;
+     border-radius: 5px;
+ }
+ .navbar-toggler{
+     color: white;
+ }
+ .navbar-toggler-icon{
+   color: white;
+ }
+
+ .text-check-box{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+ }
+.title{
+    font-family: "Montserrat", serif;
+}
+.btn{
+    background-color: #FF8000;
+    color: white;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}

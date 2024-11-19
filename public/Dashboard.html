@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="icon" type="icon" href="/public/img/logo-img.png">
+        <link rel="stylesheet" href="/public/css/Dashboard.css">
+    </head>
+
+    <body>
+        <section>
+            <div class="d-flex">
+                <nav id="sidebar" class="nav-bar text-white">
+                    <div class="sidebar-header">
+                        <img src="/public/img/sample.jpg" alt="Profile Picture" class="img-fluid rounded-circle my-3">
+                        <h3 id="AdminName">Admin Name</h3>
+                    </div>
+                    <ul class="list-unstyled components">
+                        <li>DASHBOARD</li>
+                        <li><a href="#" onclick="showSection('appointments')">Appointment List</a></li>
+                        <li><a href="#" onclick="showSection('history')">History of Residents</a></li>
+                        <li><a href="#" onclick="showSection('inventory')">Inventory</a></li>
+                        <li><a href="#" onclick="logout()">Log Out</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+
+        <section>
+            <div id="content" class="p-4">
+                <section id="appointments" class="content-section">
+                    <h2 class="text-center text-white">Appointment List</h2>
+                    <div class="table-responsive">
+                        <table class="table text-black table-striped table-bordered" style=" background-color: white;">
+                            <thead id="thead-appointment">
+                                <tr>
+                                    <th scope="col">Appointment #</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Certificates</th>
+                                    <th scope="col">Purpose</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="">Confirmation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-appointment">
+                                <tr id="trAppointmentList">
+                            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="history" class="content-section d-none">
+                    <h2 class="text-center text-white">History of Residents</h2>
+                    <div class="list-history">
+                        <div class="table-responsive">
+                            <table class="table text-black table-striped table-bordered" style=" background-color: white;">
+                                <thead id="thead-history">
+                                    <tr>
+                                        <th scope="col">Appointment #</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Certificates</th>
+                                        <th scope="col">Purpose</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Time</th>
+                                
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-history">
+                                    <tr id="tr">
+                                   
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section id="inventory" class="content-section d-none">
+                    <h2 class="text-center text-white">Inventory</h2>
+                    <div class="list-inventory">
+                        <div class="table-responsive">
+                            <table class="table text-black table-striped table-bordered" style="background-color: white;">
+                                <thead id="thead-inventory">
+                                    <tr>
+                                      
+                                        
+                                     
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-inventory">
+                                    <tr>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/public/js/Dashboard.js"></script>
+        
+    </body>
+
+    </html>
